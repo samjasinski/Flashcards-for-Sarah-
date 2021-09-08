@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="CSS\styles.css">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+
+  <title>Flash Cards (for Sarah)</title>
+
+</head>
+
+
+<body>
+
+  <!-- Input Fields -->
+
+  <div id="input-field-container" class="container">
+
+    <h1 id="main-heading">Flash Cards (for Sarah)</h1>
+
+    <div id="flashcard-input-field0" class="row">
+
+      <div class="col-sm-12 col-md-6">
+        <input class="flashcard-input-front" type="text" placeholder="FRONT">
+      </div>
+
+      <div class="col-sm-12 col-md-6">
+        <input class="flashcard-input-back" type="text" placeholder="BACK">
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- add button ( + ) & subtract button ( - ) -->
+  <div id="input-field-controls-container"class="container">
+    <div class="row">
+
+      <div class="col">
+        <button id="add-button" type="button" class="btn btn-success">Add</button>
+      </div>
+
+      <div class="col">
+        <button id="subtract-button" type="button" class="btn btn-danger">Remove</button>
+      </div>
+
+      <div class="row">
+
+        <div class="col">
+          <button id="create-button" type="button" class="btn btn-info">CREATE!</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- FLASHCARDS -->
+<div id="flashcard-carousel" class="carousel slide hidden" data-bs-interval="false" data-bs-wrap="false">
+
+  <div class="carousel-indicators">
+    <button id="carousel-indicator" type="button" data-bs-target="#flashcard-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
+  </div>
+
+    <div class="carousel-inner">
+
+      <div id="flashcard0" class="carousel-item active">
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+
+            <div class="flip-card-front">
+              <h1 class="h1-front">Front</h1>
+            </div>
+
+            <div class="flip-card-back">
+              <h1 class="h1-back">Back</h1>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#flashcard-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#flashcard-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+
+<!-- BACK BUTTON -->
+<div id="back-button-container" class="container hidden">
+
+  <div class="row">
+    <div class="col">
+      <button id="back-button" type="button" class="btn btn-outline-warning">Back</button>
+    </div>
+  </div>
+
+  <!-- Javascript link - should be the last object in the HTML body -->
+  <script type="text/javascript" src="JS\javascript.js"></script>
+
+</body>
+
+
+</html>
